@@ -1,0 +1,54 @@
+
+frontend
+
+npm install bootstrap --save
+then @angular.json add 
+ "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "src/styles.scss"
+            ],
+
+
+
+go to alertify.js
+
+npm install alertifyjs --save
+
+style.scss
+@import '../node_modules/alertifyjs/build/css/alertify.min.css';
+@import'../node_modules/alertifyjs/build/css/themes/bootstrap.min.css';
+
+tsconfig.json
+    "typeRoots": [
+      "node_modules/@types"
+      ,"src/alertify.d.ts"
+    ],
+
+got ot ngx-bootstrap
+
+npm install ngx-bootstrap --save
+
+npm add ngx-bootstrap --component dropdowns
+
+
+
+
+
+
+
+
+
+
+
+
+dotnet new webapi -n backend_api --framework net6.0
+
+//
+
+
+git config --global user.email "@gmail.com"
+git config --global user.name"jerald"
+
+dotnet add package Microsoft.EntityFrameworkCore --version 6.0.0-preview.4.23259.3
+dotnet add package Microsoft.AspNetCore.Authentication.JwtBearer --version 6.0.0-preview.4.23260.4
+dotnet add package Microsoft.EntityFrameworkCore.Tools --version 6.0.0-preview.4.23259.3
